@@ -1,0 +1,195 @@
+/* General Styles for the Deposit Component */
+#cashback {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Set to 100vh to cover the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent any scroll or overflow issues */
+}
+
+/* Aligning the title (h1) to the top center */
+#cashback h1 {
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+/* Form styling */
+#cashback form {
+    max-width: 430px;
+    width: 100%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 30px;}
+
+    #cashback .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      #cashback .form-group label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 6px;
+        text-align: left;
+        width: 100%;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+/* Input fields styling */
+#cashback form input, #cashback select{
+ width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Focused input styling */
+#cashback form input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Label styling */
+#cashback label {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Submit button styling */
+#cashback form button {
+    background-color: #081b29;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;}
+
+/* Submit button hover effect */
+#cashback form button:hover {
+    background-color: orangered;
+}
+
+/* Balance display */
+#cashback h2 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding-bottom: 1%;
+    margin: 0;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #cashback h1 {
+        font-size: 28px;
+    }
+
+    #cashback form input {
+        font-size: 14px;
+    }
+
+    #cashback form button {
+        font-size: 16px;
+    }
+
+    #cashback h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #cashback h1 {
+        font-size: 24px;
+    }
+
+    #cashback form {
+        padding: 15px;
+    }
+
+    #cashback form input {
+        font-size: 12px;
+    }
+
+    #cashback form button {
+        font-size: 14px;
+        padding: 12px 18px;
+    }
+
+    #cashback h2 {
+        font-size: 18px;
+    }
+}
+
+/* Styles for the message */
+.message {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+/* Success message styles */
+.message.success {
+    background-color: #28a745; /* Green */
+    color: white;
+    border: 1px solid #218838; /* Darker green */
+}
+
+/* Error message styles */
+.message.error {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: 1px solid #c82333; /* Darker red */
+}
+
+/* Info message styles (optional, for general messages) */
+.message.info {
+    background-color: #17a2b8; /* Blue */
+    color: white;
+    border: 1px solid #138496; /* Darker blue */
+}
