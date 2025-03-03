@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
     <div id='heading'>
-  <h1>Welcome to Our Bank</h1>
+  <h1>Welcome Our Bank</h1>
 </div>
       
       <div className="carousel-container">
